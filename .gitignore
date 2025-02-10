@@ -3,3 +3,5 @@ bin/
 umbraco
 wwwroot/media
 wwwroot/umbraco
+.DS_Store
+Views/Partials/.DS_Store
