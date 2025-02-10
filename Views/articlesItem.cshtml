@@ -1,0 +1,67 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "master.cshtml";
+}
+<!-- Jumbotron, w title -->
+<div class="jumbotron text-center jumbotron-fluid">
+	<div class="container">
+		<h1 class="display-1">@Model.Value("articlesTitle")</h1>
+		<p>And this is <span class="font-weight-bold">only</span> the beginning.</p>
+	</div>
+</div>
+
+<!-- Main container -->
+
+<!-- Blogpost meta data -->
+<div class="container-fluid grey-bg">
+	<div class="container">
+		<div class="row section">
+			<div class="col-md-6">
+				<div class="meta-author media p-3">
+					<img src="images/SofieToft.jpg" alt="Sofie Toft" class="mr-3 mt-2" style="width:60px;">
+					<div class="media-body">
+						<p><span class="font-weight-bold">Written by</span> <br />
+							Sofie Toft<br />
+							<span class="font-italic">Documenter and Video host</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="meta-meta text-right">
+					<p><br /> 
+						<span class="font-weight-bold">Published on</span> January 9th 2020 <br />
+						<span class="font-weight-bold">Category:</span> <a href="#">Product Update</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>		
+
+<!-- Blogpost content -->
+<div class="container">
+
+	<div class="row section">
+		<div class="col-md-12">
+			@Model.Value("articleContent")
+		</div>
+	</div>
+</div>
+
+<!-- Related story -->
+<div class="container-fluid orange-bg">
+	<div class="container">
+		<div class="row section">
+			<div class="col-md-12 blog-related">
+				<h4>Related story:</h4>
+				<a href="#">
+					<h5>Product Update: Highlights of 2019</h5>
+					<p>‘Tis the season to be jolly, launch new products, release new features and plan for next year. 
+						Don’t worry, I’m not going to sing it for you, but I’ll take you through recent product news and give you some insight as to what you can expect in December - 
+						and the beginning of 2020.<br />
+						<span class="font-italic">Written by Sofie Toft</span></p>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
