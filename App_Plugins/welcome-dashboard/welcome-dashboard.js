@@ -1,38 +1,47 @@
-import { css as l, customElement as c, html as d } from "@umbraco-cms/backoffice/external/lit";
-import { UmbLitElement as i } from "@umbraco-cms/backoffice/lit-element";
-var h = Object.getOwnPropertyDescriptor, p = (r, s, n, a) => {
-  for (var e = a > 1 ? void 0 : a ? h(s, n) : s, o = r.length - 1, m; o >= 0; o--)
-    (m = r[o]) && (e = m(e) || e);
+import { css as c, customElement as i, html as d } from "@umbraco-cms/backoffice/external/lit";
+import { UmbLitElement as n } from "@umbraco-cms/backoffice/lit-element";
+var b = Object.getOwnPropertyDescriptor, h = (l, t, s, m) => {
+  for (var e = m > 1 ? void 0 : m ? b(t, s) : t, a = l.length - 1, r; a >= 0; a--)
+    (r = l[a]) && (e = r(e) || e);
   return e;
 };
-let t = class extends i {
+let o = class extends n {
   render() {
     return d`
-      <h1>Welcome Dashboard</h1>
-      <div>
-        <p>
-          This is the Backoffice. From here, you can modify the content,
-          media, and settings of your website. Ur mom can edit it
-        </p>
-        <p>© Ama Usa An 2025</p>
-      </div>
-    `;
+          <h1>
+            <umb-localize key="welcomeDashboard_heading">Welcome</umb-localize>
+            Dashboard
+          </h1>
+          <div>
+            <p>
+              <umb-localize key="welcomeDashboard_bodytext">
+                This is the Backoffice. From here, you can modify the content,
+                media, and settings of your website.
+              </umb-localize>
+            </p>
+            <p>
+              <umb-localize key="welcomeDashboard_copyright">
+                © Ama Usa An 2025
+              </umb-localize>
+            </p>
+          </div>
+        `;
   }
 };
-t.styles = [
-  l`
+o.styles = [
+  c`
       :host {
         display: block;
         padding: 24px;
       }
     `
 ];
-t = p([
-  c("my-welcome-dashboard")
-], t);
-const b = t;
+o = h([
+  i("my-welcome-dashboard")
+], o);
+const u = o;
 export {
-  t as MyWelcomeDashboardElement,
-  b as default
+  o as MyWelcomeDashboardElement,
+  u as default
 };
 //# sourceMappingURL=welcome-dashboard.js.map

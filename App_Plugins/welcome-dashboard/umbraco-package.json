@@ -20,6 +20,33 @@
             "match": "Umb.Section.Content"
           }
         ]
+      },
+      {
+        "type": "localization",
+        "alias": "MyPackage.Localize.En",
+        "name": "English",
+        "meta": {
+          "culture": "en"
+        },
+        "js": "/App_Plugins/welcome-dashboard/Localization/en.js"
+      },
+      {
+        "type": "localization",
+        "alias": "MyPackage.Localize.DaDK",
+        "name": "Danish",
+        "meta": {
+          "culture": "da-dk"
+        },
+        "js": "/App_Plugins/welcome-dashboard/Localization/da-dk.js"
+      },
+      {
+        "type": "localization",
+        "alias": "MyPackage.Localize.TlPH",
+        "name": "Filipino",
+        "meta": {
+          "culture": "tl-ph"
+        },
+        "js": "/App_Plugins/welcome-dashboard/Localization/tl-ph.js"
       }
     ]
   }
