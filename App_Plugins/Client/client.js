@@ -610,7 +610,7 @@ let O = class extends P {
       <slot></slot>
       <div class="card">
         <button @click=${this._onClick} part="button">
-          count is ${this.count}
+          the currentcount is ${this.count}
         </button>
       </div>
       <p class="read-the-docs">${this.docsHint}</p>

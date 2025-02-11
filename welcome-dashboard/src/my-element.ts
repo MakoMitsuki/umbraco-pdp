@@ -36,7 +36,7 @@ export class MyElement extends LitElement {
       <slot></slot>
       <div class="card">
         <button @click=${this._onClick} part="button">
-          the currentcount is ${this.count}
+         new count is ${this.count}
         </button>
       </div>
       <p class="read-the-docs">${this.docsHint}</p>
