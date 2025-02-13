@@ -1,0 +1,28 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+    Layout = "master.cshtml";
+}
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="col-md-3">
+            <nav class="nav-bar nav-bar--list">
+                
+            </nav>
+        </div>
+
+        <div class="col-md-9">
+            <article>
+                @await Html.GetBlockGridHtmlAsync(Model, "bodyText")
+            </article>
+            <article>
+                @await Html.PartialAsync("partials/loginStatus")
+                @await Html.PartialAsync("partials/register")
+                @await Html.PartialAsync("partials/login")
+            </article>
+        </div>
+    </div>
+
+</section>
