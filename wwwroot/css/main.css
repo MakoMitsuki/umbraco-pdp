@@ -15,27 +15,27 @@ p {
 /* ---------- BUTTONS ---------- */
 
 .btn-primary {
-    background-color: rgba(53, 68, 177, 1);
+    background-color: rgba(120, 136, 10, 1);
     padding: .7rem 1.5rem;
     border-radius: 3px;
-    border: 2px rgba(53, 68, 177, 1) solid;
+    border: 2px rgba(120, 136, 10, 1) solid;
 }
 
 .btn-primary:hover, .btn-primary:focus {
-    background-color: rgba(53, 68, 177, .8);
-    border: 2px rgba(53, 68, 177, .8) solid;
+    background-color: rgba(120, 136, 10, .8);
+    border: 2px rgba(120, 136, 10, .8) solid;
 }
 
 .btn-inverted {
     background-color:white;
-    border: 2px #3544b1 solid;
-    color: #3544b1;
+    border: 2px #BCD036 solid;
+    color: #BCD036;
     border-radius: 3px;
     padding: .7rem 1.5rem;
 }
 
 .btn-inverted:hover, .btn-inverted:focus {
-    background-color: #3544b1;
+    background-color: #BCD036;
     color: white;
 }
 
@@ -65,14 +65,20 @@ p {
 /* ---------- JUMBOTRON ---------- */
 
 .jumbotron {
-    background-color:rgba(16, 31, 60, 1);
+    background-color: #CAD23F;
     margin-bottom: 0;
-    color:white;
+    color:rgba(29, 30, 28, 1);
 }
 
 /* ---------- NAVBAR ---------- */
+.navbar-container {
+    background-color:rgba(29, 30, 28, 1);
+    margin: 0 !important;
+    max-width: 100% !important;
+}
+
 .navbar-light .navbar-brand {
-    color:#101f3c;
+    color: rgba(120, 136, 10, 1);
 }
 
 .navbar-brand {
@@ -80,15 +86,16 @@ p {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color:rgba(16, 31, 60, .8);
+    color:white;
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color:rgba(16, 31, 60, 1);
+    color: #BCD036;
+    text-decoration: underline;
 }
 
 .navbar-light .navbar-nav .nav-link.active {
-    color:rgba(16, 31, 60, 1);
+    color:rgba(120, 136, 10, 0.8);
     font-weight: bold;
 }
 
@@ -100,11 +107,11 @@ p {
 /* ---------- MAIN CONTAINER ---------- */
 
 p a {
-    color:#3544b1;
+    color:#78880A;
 }
 
 p a:hover, p a:focus {
-    color: rgba(53, 68, 177, 0.8);
+    color: rgba(120, 136, 10, .8);
 }
 
 .grey-bg {
@@ -172,11 +179,11 @@ p a:hover, p a:focus {
 }
 
 .sidebar-links li a {
-    color:#3544b1;
+    color:rgba(120, 136, 10, 1);
 }
 
 .sidebar-links li a:hover, .sidebar-links li a:focus {
-    color: rgba(53, 68, 177, 0.8);
+    color: rgba(120, 136, 10, 0.8);
     text-decoration: none;
 }
 
@@ -201,7 +208,7 @@ a.featured-link:hover, a.featured-link:focus {
 
 .thumbnail-blog {
     padding-bottom: 5px;
-    border-bottom: rgba(53, 68, 177, 1) solid 2px;
+    border-bottom: rgba(120, 136, 10, 1) solid 2px;
     margin-bottom: 35px;
     transition: ease .5s;
 }
@@ -242,11 +249,11 @@ a.featured-link:hover .thumbnail-blog .thumbnail-img {
 }
 
 .meta-meta a {
-    color:#3544b1;
+    color:rgba(120, 136, 10, 1);
 }
 
 .meta-meta a:hover, .meta-meta a:focus {
-    color: rgba(53, 68, 177, 0.8);
+    color: rgba(120, 136, 10, 0.8);
     text-decoration: none;
 }
 
@@ -259,7 +266,7 @@ a.featured-link:hover .thumbnail-blog .thumbnail-img {
 }
 
 .blog-related a {
-    color:rgba(16, 31, 60, 1);
+    color:rgba(120, 136, 10, 0.8);
 }
 
 .blog-related a:hover, .blog-related a:focus {
@@ -278,7 +285,7 @@ div.teammember {
 /* ---------- FOOTER ---------- */
 
 .footer {
-    background-color:#1b264f;
+    background-color:#1D1E1C;
     color: white;
 }
 
